@@ -30,7 +30,6 @@ public class EditTextActivity extends AppCompatActivity {
         button=findViewById(R.id.btn_login);
         sharedPreferences = getSharedPreferences(MyOrders.REMEMBER_PASS_DATABASE, Context.MODE_PRIVATE);
         remeberElag= sharedPreferences.getInt("remeber_flag", -1);
-        Log.d("测试",remeberElag+"");
         if (remeberElag == 1) {
             name = sharedPreferences.getString("name", "");
             password = sharedPreferences.getString("password", "");
